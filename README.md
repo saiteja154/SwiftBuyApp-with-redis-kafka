@@ -84,6 +84,7 @@ spring.redis.port=6379
 
 # MySQL
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+
 spring.datasource.username=root
 spring.datasource.password=your_password
 
@@ -91,9 +92,16 @@ spring.datasource.password=your_password
 ProductService url: https://github.com/saiteja154/ProductServices
 
 
-**Desc**:: Each service has different functionality. We used a caching layer for the Product Service to cache frequently accessed products,
-          a User Service for authentication purposes, and Kafka to send notification emails upon user signup.Integrated Different payment gateways (Razorpay, Stripe)
-          are used for processing payment transactions. We use Eureka Server to register the service and to manage multiple instances of different services running for load balancing.
-          MySQL is used as the database to store application data.
 
+## 📄 Description
+
+Each service in this project has a specific responsibility and functionality:
+
+- 🗂️ We used a **caching layer** in the **Product Service** to cache frequently accessed products and improve performance.
+- 👤 A **User Service** is responsible for **authentication and user management**.
+- 📩 **Kafka** is integrated to **send notification emails** when a user signs up.
+- 💳 Integrated **multiple payment gateways** like **Razorpay** and **Stripe** to handle secure payment transactions.
+- 🌐 **Eureka Server** is used for **service registration and discovery**, enabling us to manage **multiple instances of services** and achieve **load balancing**.
+- 🛢️ **MySQL** is used as the **relational database** to store and manage persistent data.
+ 
 
